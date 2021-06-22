@@ -1,0 +1,10 @@
+﻿<f:ApplicationBase x:Class="PlateFormaApprentissage.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:PlateFormaApprentissage"
+             xmlns:f="clr-namespace:PRBD_Framework;assembly=PRBD_Framework"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</f:ApplicationBase>

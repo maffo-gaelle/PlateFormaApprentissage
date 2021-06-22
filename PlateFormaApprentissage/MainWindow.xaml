@@ -1,0 +1,22 @@
+﻿<Window x:Class="PlateFormaApprentissage.MainWindow"
+        x:Name="win"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PlateFormaApprentissage"
+        xmlns:f="clr-namespace:PRBD_Framework;assembly=PRBD_Framework"
+        mc:Ignorable="d"
+        Title="Plateforme de cours" Height="450" Width="800">
+   
+    <StackPanel>
+        <TextBlock Text="Liste des Cours" FontSize="16" FontWeight="Bold"/>
+        <ListView ItemsSource="{Binding ElementName=win, Path=Courses}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Title}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackPanel>
+</Window>
